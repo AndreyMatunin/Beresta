@@ -80,6 +80,7 @@ button:hover {
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
+    letter-spacing: 1px;
     list-style-type: none;
 }
   
@@ -99,6 +100,11 @@ main {
     margin-top: -155px;
 }
 
+.h1 {
+    margin: 0 auto;
+    width: 800px;
+}
+
 .inner__heading {
     padding: 170px 0 150px 0;
     font-size: 46px;
@@ -106,9 +112,14 @@ main {
     color: #fff;
 }
 
+.beresta {
+    color: rgb(227, 190, 150);
+}
+
 .inner__img {
     width: 55px;
     height: 55px;
+    padding-bottom: 40px;
 }
 
 .inner__logo {
@@ -123,6 +134,8 @@ main {
     flex-direction: column;
     align-items: center;
     width: 300px;
+    text-align: center;
+    line-height: 30px;
 }
 
 
