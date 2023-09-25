@@ -96,7 +96,7 @@ button:hover {
 
 main {
     background: url(./img/main.png);
-    margin: -155px;
+    margin-top: -155px;
 }
 
 .inner__heading {
