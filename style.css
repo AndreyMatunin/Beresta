@@ -11,7 +11,7 @@
     margin-left: auto;
 }
 
-header {
+.header {
     background-color: rgb(10, 80, 70);
     position: sticky;
     padding: 20px;
@@ -40,13 +40,13 @@ header {
     align-items: end;
 }
 
-.phone {
+.header__phone {
     font-size: 18px;
     padding-bottom: 10px;
     color: rgb(227, 190, 150);
 }
 
-.adress {
+.header__adress {
     font-size: 13px;
     text-align: end;
     width: 200px;
@@ -95,24 +95,23 @@ button:hover {
     color: rgb(227, 190, 150);
 }
 
-main {
+.inner {
     background: url(./img/main.png);
     margin-top: -155px;
+    padding-bottom: 100px;
 }
 
-.h1 {
-    margin: 0 auto;
-    width: 800px;
-}
-
-.inner__heading {
+.inner__main-header {
     padding: 170px 0 150px 0;
     font-size: 46px;
     text-align: center;
     color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
 }
 
-.beresta {
+.inner__beresta {
     color: rgb(227, 190, 150);
 }
 
@@ -138,5 +137,192 @@ main {
     line-height: 30px;
 }
 
+.about {
+    padding: 50px 0 50px 0;
+}
 
+.about__descr {
+    border: 1px solid #e3be96;
+    border-right: none;
+    border-left: none;
+    margin-top: 10px;
+    text-align: center;
+}
 
+.about__heading {
+    background-color: #e3be96;
+    width: 200px;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.about__article {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 0 50px 0;
+    line-height: 30px;
+    width: 800px;
+}
+
+.pictures__wrapper {
+    padding: 50px 0 50px 0;
+    display: grid;
+    grid-template-areas: 
+    "a c d"
+    "b c e";
+    grid-gap: 20px;
+}
+
+.pictures__wrapper img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.pictures__a {
+    width: 300px;
+    grid-area: a;
+}
+
+.pictures__b {
+    width: 300px;
+    grid-area: b;
+}
+
+.pictures__c {
+    width: 300px;
+    grid-area: c;
+}
+
+.pictures__d {
+    width: 300px;
+    grid-area: d;
+}
+
+.pictures__e {
+    width: 300px;
+    grid-area: e;
+}
+
+.map__heading {
+    text-align: center;
+    padding: 50px 0 50px 0;
+    color: rgb(10, 80, 70);
+}
+
+.price {
+    padding: 50px 0 50px 0;
+}
+
+.price__wrapper {
+    text-align: center;
+}
+
+.price__cost {
+    font-size: 42px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: rgb(10, 80, 70);
+    text-align: center;
+}
+
+.price__work_schedule {
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 0 50px 0;
+    line-height: 30px;
+    width: 800px;
+}
+
+.rules__heading {
+    color: rgb(10, 80, 70);
+    text-align: center;
+}
+
+.rules__img {
+    padding: 20px 0 20px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55px;
+    height: 55px;
+}
+
+.rules__points {
+    padding-bottom: 50px;
+    width: 600px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer {
+    background-color: rgb(27, 27, 27);
+    min-height: 320px;
+}
+
+.footer__wrapper {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer__phone {
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 10px;
+    color: rgb(227, 190, 150);
+}
+
+.footer__adress {
+    font-size: 13px;
+    text-align: center;
+    width: 200px;
+    color: #fff;
+    line-height: 20px;
+}
+
+.footer__network {
+    text-align: center;
+    font-size: 18px;
+    color: rgb(227, 190, 150);
+    padding-left: 50px;
+}
+
+.footer__heading {
+    padding-bottom: 10px;
+    font-size: 18px;
+    color: rgb(227, 190, 150);
+}
+
+.footer__menu {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    letter-spacing: 1px;
+    list-style-type: none;
+}
+  
+.footer__link {
+    font-weight: 300;
+    font-size: 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer__link:hover {
+    color: rgb(227, 190, 150);
+}
+
+.footer__copy {
+    text-align: center;
+    margin-top: 50px;
+    color: #fff;
+}

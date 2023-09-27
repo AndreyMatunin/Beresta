@@ -10,12 +10,12 @@
 
 <body>
 
-    <header>
+    <header class="header" id="header">
         <div class="header__wrapper">
             <div class="header__logo"><a href="#"><img class="header__img" src="/img/logo.png" alt="logo"></a></div>
             <div class="header__contact">
-                <div class="phone">+7 (921) 569-78-78</div>
-                <div class="adress">Ленинградская область, Гатчинский район, коттеджный посёлок
+                <div class="header__phone">+7 (921) 569-78-78</div>
+                <div class="header__adress">Ленинградская область, Гатчинский район, коттеджный посёлок
                     Поместье Бауэр</div>
             </div>
 
@@ -31,23 +31,23 @@
 
             <nav>
                 <ul class="menu">
-                    <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
-                    <li class="menu__item"><a href="#require" class="menu__link">О бане</a></li>
-                    <li class="menu__item"><a href="#require" class="menu__link">Блок с картинками</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link">Цены</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link">Правила</a></li>
+                    <li class="menu__item"><a href="#header" class="menu__link">Главная</a></li>
+                    <li class="menu__item"><a href="#about" class="menu__link">О бане</a></li>
+                    <li class="menu__item"><a href="#pictures" class="menu__link">Блок с картинками</a></li>
+                    <li class="menu__item"><a href="#price" class="menu__link">Цены</a></li>
+                    <li class="menu__item"><a href="#rules" class="menu__link">Правила</a></li>
                     <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
-        <section class="inner">
+    <main class="main">
+        <section class="inner" id="inner">
             <div class="container">
-                <d class="inner__descripton">
-                    <div class="h1"><h1 class="inner__heading"><span class="beresta">Береста –</span> это уютная и комфортная
-                        семейная баня для вашего отдыха</h1></div>
+                <div class="inner__descripton">
+                    <h1 class="inner__main-header"><span class="inner__beresta">Береста –</span> это уютная и комфортная
+                        семейная баня для вашего отдыха</h1>
                     <div class="inner__logo">
                         <div class="inner__icon"><img class="inner__img" src="/img/icons/sryb.png" alt="">Уникальная
                             эко-баня из
@@ -59,20 +59,20 @@
                             км от
                             КАДа по хорошей дороге</div>
                     </div>
-
-            </div>
+                </div>
             </div>
         </section>
 
-        <section class="about">
+        <section class="about" id="about">
             <div class="container">
                 <div class="about__descr">
 
-                    <h2>О бане</h2>
+                    <h2 class="about__heading">О БАНЕ</h2>
 
-                    <p> Если вы устали от городской суеты и стрессов, и хотите окунуться в настоящую атмосферу уюта, то
+                    <p class="about__article"> Если вы устали от городской суеты и стрессов, и хотите окунуться в
+                        настоящую атмосферу уюта, то
                         Береста - именно
-                        то, что вам нужно!
+                        то, что вам нужно! <br>
                         Наша баня из сруба дерева с дровяной печью и всеми удобствами создана для того, чтобы вы смогли
                         насладиться
                         моментами уединения и истинного отдыха в окружении природы. Вы сможете расслабиться и отдохнуть,
@@ -90,60 +90,128 @@
                 </div>
             </div>
         </section>
-        <section class="pictures">
+        <section class="pictures" id="pictures">
             <div class="container">
-
+                <div class="pictures__wrapper">
+                    <img class="pictures__a" src="/img/relax_zone/DSC_0192.JPG" alt="relax_zone">
+                    <img class="pictures__b" src="/img/sauna/DSC_0179.JPG" alt="sauna"">
+                    <img class=" pictures__c" src="/img/bathroom/IMG_7616.png" alt="bathroom">
+                    <img class="pictures__d" src="/img/swimming_pool/DSC_0168.JPG" alt="swimming_pool">
+                    <img class="pictures__e" src="/img/territory/DSC_0212.JPG" alt="territory">
+                </div>
             </div>
         </section>
 
-        <section class="price">
+
+
+        <section class="map">
+            <div class="map__wrapper">
+
+                <h2 class="map__heading">МЫ ТУТ</h2>
+
+                <iframe
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3Af0c91d1177b5cbd4f32e0b16a889537f5e46736a47db4810adfb5e9ec4f90e3b&amp;source=constructor"
+                    width="100%" height="500" frameborder="0"></iframe>
+            </div>
+        </section>
+
+        <section class="price" id="price">
             <div class="container">
-                <div class="price__cost">
-                    Цены:
-                    Пн-чт:
-                    День (9:00 – 17:00) – 2300 руб./час
-                    Вечер (17:00 – 24:00) – 2500 руб./час
-                    Пт-вс (и праздничные дни):
-                    День (9:00 – 17:00) – 2500 руб./час
-                    Вечер (17:00 – 24:00) – 3000 руб./час
-                    Минимальное время бронирования 3 часа. При заказе от 4-х часов + 1 час в подарок.
+                <div class="price__wrapper">
+                    <h2 class="price__cost">Цены:</h2>
+                    <p class="price__work_schedule">
+                        Пн-чт: <br>
+                        День (9:00 – 17:00) – <b>2300 руб./час</b> <br>
+                        Вечер (17:00 – 24:00) – <b>2500 руб./час</b> <br>
+                        Пт-вс (и праздничные дни): <br>
+                        День (9:00 – 17:00) – <b>2500 руб./час</b> <br>
+                        Вечер (17:00 – 24:00) – <b>3000 руб./час</b></p>
+                    <p class="price__min_time">Минимальное время бронирования 3 часа. При заказе от 4-х часов + 1 час в
+                        подарок</p>
                 </div>
-                <div class="price__rules">
-                    <h2>Правила посещения бани:</h2>
-                    1. Употребление спиртного, даже слабоалкогольного, категорически запрещено при посещении бани.
-                    2. В бане строго запрещено курение. Курение может представлять угрозу здоровью и безопасности людей,
-                    а
-                    также способствовать возникновению пожара. Пожалуйста, соблюдайте это правило во избежание
-                    неприятных
-                    последствий.
-                    3. Регулярность посещения бани не должна превышать пределов разумного и здоровья. Важно слушать свои
-                    ощущения и не перегреваться, особенно для людей с сердечно-сосудистыми заболеваниями, беременным
-                    женщинам и лицам с другими медицинскими противопоказаниями к посещению бани.
-                    4. Перед посещением бани рекомендуется принять душ. Это поможет очистить кожу и улучшит процесс
-                    потоотделения во время парения.
-                    5. Во избежание возможных травм и постоянного наблюдения за соблюдением правил безопасности, детям
-                    необходимо находиться в бане под присмотром взрослых. Во время посещения бани следует соблюдать эти
-                    правила, чтобы создать комфортные и безопасные условия для всех, придерживаясь здорового и разумного
-                    подхода к парению.
-                </div>
+
                 <div class="price__form">
 
                 </div>
             </div>
         </section>
 
-        <section class="map">
+        <section class="rules" id="rules">
             <div class="container">
+                <div class="rules__description">
+                    <h2 class="rules__heading">Правила посещения бани:</h2>
 
+                    <div class="rules__points"><img class="rules__img" src="/img/icons/barbeq.png" alt="">1.
+                        Употребление спиртного, даже слабоалкогольного, категорически запрещено
+                        при посещении бани.</div>
+                    <div class="rules__points">
+                        <img class="rules__img" src="/img/icons/barbeq.png" alt="">
+                        2. В бане строго запрещено курение. Курение может представлять угрозу
+                        здоровью и безопасности людей,
+                        а
+                        также способствовать возникновению пожара. Пожалуйста, соблюдайте это правило во избежание
+                        неприятных
+                        последствий.
+                    </div>
+                    <div class="rules__points">
+                        <img class="rules__img" src="/img/icons/barbeq.png" alt="">
+                        3. Регулярность посещения бани не должна превышать пределов разумного и
+                        здоровья. Важно слушать свои
+                        ощущения и не перегреваться, особенно для людей с сердечно-сосудистыми заболеваниями, беременным
+                        женщинам и лицам с другими медицинскими противопоказаниями к посещению бани.
+                    </div>
+                    <div class="rules__points">
+                        <img class="rules__img" src="/img/icons/barbeq.png" alt="">
+                        4. Перед посещением бани рекомендуется принять душ. Это поможет очистить
+                        кожу и улучшит процесс
+                        потоотделения во время парения.
+                    </div>
+                    <div class="rules__points">
+                        <img class="rules__img" src="/img/icons/barbeq.png" alt="">
+                        5. Во избежание возможных травм и постоянного наблюдения за соблюдением
+                        правил безопасности, детям
+                        необходимо находиться в бане под присмотром взрослых.
+                    </div>
+
+                    <p>Во время посещения бани следует соблюдать эти
+                        правила, чтобы создать комфортные и безопасные условия для всех, придерживаясь здорового и
+                        разумного
+                        подхода к парению.</p>
+                </div>
             </div>
         </section>
 
     </main>
     <footer class="footer">
         <div class="container">
+            <div class="footer__wrapper">
+                    <div class="footer__phone"><p class="footer__heading">ТЕЛЕФОН</p> +7 (921) 569-78-78</div>
+                    <div class="footer__adress"><p class="footer__heading">АДРЕС</p> Ленинградская область, Гатчинский район, коттеджный посёлок
+                        Поместье Бауэр, 59.675727, 30.102175</div>
 
+                <div class="footer__network">
+                    <p class="footer__heading">СОЦИАЛЬНЫЕ СЕТИ</p>
+                    <a href="#"><img src="/img/icons/instagram.png" alt="instagram"></a>
+                    <a href="#"><img src="/img/icons/vk.png" alt="vk"></a>
+                </div>
+            </div>
+        <nav>
+            <ul class="footer__menu">
+                <li class="footer__item"><a href="#" class="footer__link">Главная</a></li>
+                <li class="footer__item"><a href="#require" class="footer__link">О бане</a></li>
+                <li class="footer__item"><a href="#require" class="footer__link">Блок с картинками</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Цены</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Правила</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+        <div class="footer__copy">
+            © 2023 Beresta. Все права защищены. При копирование материалов сайта необходима ссылка на источник.
         </div>
+
     </footer>
+
     <script src="/script.js"></script>
 </body>
 
