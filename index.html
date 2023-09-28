@@ -15,8 +15,8 @@
         <div class="header__wrapper">
             <div class="header__logo"><a href="#"><img class="header__img" src="img/logo.png" alt="logo"></a></div>
             <div class="header__contact">
-                <div class="header__phone">+7 (921) 569-78-78</div>
-                <div class="header__adress">Ленинградская область, Гатчинский район, коттеджный посёлок
+                <a href="tel:89215697878" class="header__phone phone">+7 (921) 569-78-78</a>
+                <div class="header__location location">Ленинградская область, Гатчинский район, коттеджный посёлок
                     Поместье Бауэр</div>
             </div>
 
@@ -26,18 +26,18 @@
             </div>
 
             <div class="header__buttons">
-                <button class="reserve">Забронировать</button>
-                <button class="rent">Аренда под мероприятие</button>
+                <button class="header__reserve">Забронировать</button>
+                <button class="header__rent">Аренда под мероприятие</button>
             </div>
 
             <nav>
-                <ul class="menu">
-                    <li class="menu__item"><a href="#header" class="menu__link">Главная</a></li>
-                    <li class="menu__item"><a href="#about" class="menu__link">О бане</a></li>
-                    <li class="menu__item"><a href="#pictures" class="menu__link">Блок с картинками</a></li>
-                    <li class="menu__item"><a href="#price" class="menu__link">Цены</a></li>
-                    <li class="menu__item"><a href="#rules" class="menu__link">Правила</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                <ul class="header__menu">
+                    <li class="header__item"><a href="#header" class="header__link">Главная</a></li>
+                    <li class="header__item"><a href="#about" class="header__link">О бане</a></li>
+                    <li class="header__item"><a href="#pictures" class="header__link">Блок с картинками</a></li>
+                    <li class="header__item"><a href="#price" class="header__link">Цены</a></li>
+                    <li class="header__item"><a href="#rules" class="header__link">Правила</a></li>
+                    <li class="header__item"><a href="#" class="header__link">Контакты</a></li>
                 </ul>
             </nav>
         </div>
@@ -46,17 +46,19 @@
     <main class="main">
         <section class="inner" id="inner">
             <div class="container">
-                <div class="inner__descripton">
+                <div class="inner__wrapper">
                     <h1 class="inner__main-header"><span class="inner__beresta">Береста –</span> это уютная и комфортная
                         семейная баня для вашего отдыха</h1>
-                    <div class="inner__logo">
-                        <div class="inner__icon"><img class="inner__img" src="img/icons/sryb.png" alt="">Уникальная
+                    <div class="inner__items">
+                        <div class="inner__item"><img class="inner__icon icon" src="img/icons/sryb.png"
+                                alt="">Уникальная
                             эко-баня из
                             сруба с печью на дровах и просторным бассейном</div>
-                        <div class="inner__icon"><img class="inner__img" src="img/icons/barbeq.png" alt="">Тихий
+                        <div class="inner__item"><img class="inner__icon icon" src="img/icons/barbeq.png" alt="">Тихий
                             внутренний
                             дворик с беседкой и зоной барбекю</div>
-                        <div class="inner__icon"><img class="inner__img" src="img/icons/location.png" alt="">Всего 20
+                        <div class="inner__item"><img class="inner__icon icon" src="img/icons/location.png" alt="">Всего
+                            20
                             км от
                             КАДа по хорошей дороге</div>
                     </div>
@@ -66,11 +68,11 @@
 
         <section class="about" id="about">
             <div class="container">
-                <div class="about__descr">
+                <div class="about__wrapper">
 
-                    <h2 class="about__heading">О БАНЕ</h2>
+                    <h2 class="about__title">О БАНЕ</h2>
 
-                    <p class="about__article"> Если вы устали от городской суеты и стрессов, и хотите окунуться в
+                    <p class="about__description"> Если вы устали от городской суеты и стрессов, и хотите окунуться в
                         настоящую атмосферу уюта, то
                         Береста - именно
                         то, что вам нужно! <br>
@@ -95,7 +97,7 @@
             <div class="container">
                 <div class="pictures__wrapper">
                     <img class="pictures__a" src="img/relax_zone/DSC_0192.JPG" alt="relax_zone">
-                    <img class="pictures__b" src="img/sauna/DSC_0179.JPG" alt="sauna"">
+                    <img class="pictures__b" src="img/sauna/DSC_0179.JPG" alt="sauna">
                     <img class=" pictures__c" src="img/bathroom/IMG_7616.png" alt="bathroom">
                     <img class="pictures__d" src="img/swimming_pool/DSC_0168.JPG" alt="swimming_pool">
                     <img class="pictures__e" src="img/territory/DSC_0212.JPG" alt="territory">
@@ -103,12 +105,14 @@
             </div>
         </section>
 
-
-
         <section class="map">
             <div class="map__wrapper">
 
-                <h2 class="map__heading">МЫ ТУТ</h2>
+                <h2 class="map__title title">Легкий путь к отдыху</h2>
+                <p class="map__description text">Дорога из центра Санкт-Петербурга на автомобиле займёт всего 60 минут
+                    без пробок, на общественном транспорте – около 90 минут. Расстояние от КАДа всего 16 км.</p>
+
+                <p class="map__description text">Координаты для навигатора <b>59.675727, 30.102175</b></p>
 
                 <iframe
                     src="https://yandex.ru/map-widget/v1/?um=constructor%3Af0c91d1177b5cbd4f32e0b16a889537f5e46736a47db4810adfb5e9ec4f90e3b&amp;source=constructor"
@@ -119,15 +123,19 @@
         <section class="price" id="price">
             <div class="container">
                 <div class="price__wrapper">
-                    <h2 class="price__cost">Цены:</h2>
-                    <p class="price__work_schedule">
+                    <h2 class="price__title title">Цены:</h2>
+                    <p class="price__work_schedule text">
                         Пн-чт: <br>
                         День (9:00 – 17:00) – <b>2300 руб./час</b> <br>
                         Вечер (17:00 – 24:00) – <b>2500 руб./час</b> <br>
                         Пт-вс (и праздничные дни): <br>
                         День (9:00 – 17:00) – <b>2500 руб./час</b> <br>
                         Вечер (17:00 – 24:00) – <b>3000 руб./час</b></p>
-                    <p class="price__min_time">Минимальное время бронирования 3 часа. При заказе от 4-х часов + 1 час в
+
+                    <button class="price__reserve">Забронировать</button>
+
+                    <p class="price__min_time text">Минимальное время бронирования 3 часа. При заказе от 4-х часов + 1
+                        час в
                         подарок</p>
                 </div>
 
@@ -140,44 +148,41 @@
         <section class="rules" id="rules">
             <div class="container">
                 <div class="rules__description">
-                    <h2 class="rules__heading">Правила посещения бани:</h2>
+                    <h2 class="rules__title title">Правила посещения бани:</h2>
 
-                    <div class="rules__points"><img class="rules__img" src="img/icons/barbeq.png" alt="">1.
-                        Употребление спиртного, даже слабоалкогольного, категорически запрещено
-                        при посещении бани.</div>
-                    <div class="rules__points">
-                        <img class="rules__img" src="img/icons/barbeq.png" alt="">
-                        2. В бане строго запрещено курение. Курение может представлять угрозу
+                    <div class="rules__rule text"><img class="rules__icon icon" src="img/icons/barbeq.png" alt="">
+                        Регулярность посещения бани не должна превышать пределов разумного и
+                        здоровья. Важно слушать свои
+                        ощущения и не перегреваться, особенно для людей с сердечно-сосудистыми заболеваниями, беременным
+                        женщинам и лицам с другими медицинскими противопоказаниями к посещению бани
+                    </div>
+                    <div class="rules__rule text"><img class="rules__icon icon" src="img/icons/barbeq.png" alt="">
+                        В бане строго запрещено курение. Курение может представлять угрозу
                         здоровью и безопасности людей,
                         а
                         также способствовать возникновению пожара. Пожалуйста, соблюдайте это правило во избежание
                         неприятных
-                        последствий.
+                        последствий
                     </div>
-                    <div class="rules__points">
-                        <img class="rules__img" src="img/icons/barbeq.png" alt="">
-                        3. Регулярность посещения бани не должна превышать пределов разумного и
-                        здоровья. Важно слушать свои
-                        ощущения и не перегреваться, особенно для людей с сердечно-сосудистыми заболеваниями, беременным
-                        женщинам и лицам с другими медицинскими противопоказаниями к посещению бани.
+                    <div class="rules__rule text"><img class="rules__icon icon" src="img/icons/barbeq.png" alt="">
+                        Употребление спиртного, даже слабоалкогольного, категорически запрещено
+                        при посещении бани
                     </div>
-                    <div class="rules__points">
-                        <img class="rules__img" src="img/icons/barbeq.png" alt="">
-                        4. Перед посещением бани рекомендуется принять душ. Это поможет очистить
+                    <div class="rules__rule text"><img class="rules__icon icon" src="img/icons/barbeq.png" alt="">
+                        Перед посещением бани рекомендуется принять душ. Это поможет очистить
                         кожу и улучшит процесс
-                        потоотделения во время парения.
+                        потоотделения во время парения
                     </div>
-                    <div class="rules__points">
-                        <img class="rules__img" src="img/icons/barbeq.png" alt="">
-                        5. Во избежание возможных травм и постоянного наблюдения за соблюдением
+                    <div class="rules__rule text"><img class="rules__icon icon" src="img/icons/barbeq.png" alt="">
+                        Во избежание возможных травм и постоянного наблюдения за соблюдением
                         правил безопасности, детям
-                        необходимо находиться в бане под присмотром взрослых.
+                        необходимо находиться в бане под присмотром взрослых
                     </div>
 
-                    <p>Во время посещения бани следует соблюдать эти
+                    <!-- <p>Во время посещения бани следует соблюдать эти
                         правила, чтобы создать комфортные и безопасные условия для всех, придерживаясь здорового и
                         разумного
-                        подхода к парению.</p>
+                        подхода к парению.</p> -->
                 </div>
             </div>
         </section>
@@ -186,30 +191,36 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">
-                    <div class="footer__phone"><p class="footer__heading">ТЕЛЕФОН</p> +7 (921) 569-78-78</div>
-                    <div class="footer__adress"><p class="footer__heading">АДРЕС</p> Ленинградская область, Гатчинский район, коттеджный посёлок
-                        Поместье Бауэр, 59.675727, 30.102175</div>
+                <div class="footer__phone">
+                    <p class="footer__title">ТЕЛЕФОН</p> <a href="tel:89215697878" class="foooter__phone phone">+7 (921)
+                        569-78-78</a>
+                </div>
+                <div class="footer__adress">
+                    <p class="footer__title">АДРЕС</p> <p class="footer__location location">Ленинградская область, Гатчинский район, коттеджный посёлок
+                        Поместье Бауэр, 59.675727, 30.102175</p>
+                </div>
 
                 <div class="footer__network">
-                    <p class="footer__heading">СОЦИАЛЬНЫЕ СЕТИ</p>
+                    <p class="footer__title">СОЦИАЛЬНЫЕ СЕТИ</p>
                     <a href="#"><img src="img/icons/instagram.png" alt="instagram"></a>
                     <a href="#"><img src="img/icons/vk.png" alt="vk"></a>
                 </div>
             </div>
-        <nav>
-            <ul class="footer__menu">
-                <li class="footer__item"><a href="#" class="footer__link">Главная</a></li>
-                <li class="footer__item"><a href="#require" class="footer__link">О бане</a></li>
-                <li class="footer__item"><a href="#require" class="footer__link">Блок с картинками</a></li>
-                <li class="footer__item"><a href="#" class="footer__link">Цены</a></li>
-                <li class="footer__item"><a href="#" class="footer__link">Правила</a></li>
-                <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
-            </ul>
-        </nav>
-    </div>
-        <div class="footer__copy">
-            © 2023 Beresta. Все права защищены. При копирование материалов сайта необходима ссылка на источник.
+            <nav>
+                <ul class="footer__menu">
+                    <li class="footer__item"><a href="#" class="footer__link">Главная</a></li>
+                    <li class="footer__item"><a href="#require" class="footer__link">О бане</a></li>
+                    <li class="footer__item"><a href="#require" class="footer__link">Блок с картинками</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Цены</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Правила</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="footer__copy">
+                © 2023 Beresta. Все права защищены. При копирование материалов сайта необходима ссылка на источник.
+            </div>
         </div>
+
 
     </footer>
 
